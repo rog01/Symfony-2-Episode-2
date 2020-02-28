@@ -51,6 +51,7 @@ class User implements AdvancedUserInterface, Serializable
      */
     private $email;
 
+
     /**
      * @ORM\Column(type="json_array")
      */

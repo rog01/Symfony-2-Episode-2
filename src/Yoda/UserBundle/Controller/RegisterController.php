@@ -50,6 +50,7 @@ class RegisterController extends Controller
         return array('form' => $form->createView());
     }
 
+
     private function encodePassword(User $user, $plainPassword)
     {
         $encoder = $this->container->get('security.encoder_factory')
@@ -67,3 +68,5 @@ class RegisterController extends Controller
         $this->container->get('security.context')->setToken($token);
     }
 }
+
+
